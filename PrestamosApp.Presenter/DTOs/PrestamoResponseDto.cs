@@ -6,7 +6,7 @@ namespace PrestamosApp.Presenter.DTOs
 {
     public class PrestamoResponseDto
     {
-        public int Id { get; set; }
+        public int Id { get; set; } // Comentario
         public string NombreCliente { get; set; }=string.Empty;
         public string TipoPrestamo { get; set; }=string.Empty;
         public decimal Monto { get; set; }
