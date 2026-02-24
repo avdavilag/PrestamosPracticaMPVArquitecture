@@ -1,5 +1,5 @@
 ﻿using PrestamosApp.Model.Entities;
-using PrestamosApp.Model.Interfaces;
+using PrestamosApp.Data.Interfaces;
 using PrestamosApp.Data.Context;
 
 

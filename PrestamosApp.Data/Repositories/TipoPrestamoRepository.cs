@@ -1,5 +1,4 @@
-﻿using PrestamosApp.Model.Entities;
-using PrestamosApp.Model.Interfaces;    
+﻿using PrestamosApp.Data.Interfaces;    
 using PrestamosApp.Data.Context;
 
 
@@ -15,7 +14,7 @@ namespace PrestamosApp.Data.Repositories
         public List<TipoPrestamo> ObtenerTodos()
            => _context.TiposPrestamo.ToList();
         
-        public TipoPrestamo? ObtenerPrestamo(int edad)
+        public TipoPrestamo? ObtenerPorEdad(int edad)
         {
             return _context.TiposPrestamo.FirstOrDefault(tp => tp.EdadMinima <= edad && tp.EdadMaxima >= edad);
         }
