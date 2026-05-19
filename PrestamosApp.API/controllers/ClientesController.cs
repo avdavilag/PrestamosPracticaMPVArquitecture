@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PrestamosApp.Presenter.DTOs;
 using PrestamosApp.Presenter.Services;  
 
 namespace PrestamosApp.API.controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ClientesController: ControllerBase
@@ -19,7 +21,7 @@ namespace PrestamosApp.API.controllers
         public IActionResult ObtenerTodos()
             => Ok(_clienteService.ObtenerTodos());
 
-        [HttpGet]
+        [HttpGet ("{id}")]
         public IActionResult ObtenerPorId(int id)
         {
             var cliente = _clienteService.ObtenerPorId(id);

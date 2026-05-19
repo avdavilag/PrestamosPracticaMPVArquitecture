@@ -9,4 +9,4 @@ public class TipoPrestamo
 	public int EdadMaxima { get; set; }
 	public List<Prestamo> Prestamos { get; set; } = new();
 	
-}
+	}

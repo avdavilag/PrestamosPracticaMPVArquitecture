@@ -12,11 +12,11 @@ namespace PrestamosApp.Data.Repositories
             _context = context;
         }
         public List<TipoPrestamo> ObtenerTodos()
-           => _context.TiposPrestamo.ToList();
+           => _context.TipoPrestamo.ToList();
         
         public TipoPrestamo? ObtenerPorEdad(int edad)
         {
-            return _context.TiposPrestamo.FirstOrDefault(tp => tp.EdadMinima <= edad && tp.EdadMaxima >= edad);
+            return _context.TipoPrestamo.FirstOrDefault(tp => tp.EdadMinima <= edad && tp.EdadMaxima >= edad);
         }
     
     }

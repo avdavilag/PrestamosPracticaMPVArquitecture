@@ -29,6 +29,7 @@ namespace PrestamosApp.Presenter.Services
                 TipoPrestamo = p.TipoPrestamo.Nombre,
                 Monto = p.Monto,
                 Estado = p.Estado,
+                NombreSucursal=p.Sucursales.Nombre,
                 FechaCreacion = p.FechaCreacion
             }).ToList();
             }

@@ -18,6 +18,7 @@ public class PrestamoRepository : IPrestamoRepository
          => _context.Prestamos
             .Include(p => p.Cliente)
             .Include(p => p.TipoPrestamo)
+            .Include(p=>p.Sucursales)
             .ToList();
     
     public List<Prestamo> ObtenerPorClienteId(int clienteId)

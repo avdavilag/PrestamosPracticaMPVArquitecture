@@ -10,7 +10,8 @@ namespace PrestamosApp.Presenter.DTOs
         public string NombreCliente { get; set; }=string.Empty;
         public string TipoPrestamo { get; set; }=string.Empty;
         public decimal Monto { get; set; }
-        public string Estado { get; set; }=string.Empty; 
+        public string Estado { get; set; }=string.Empty;
+        public string NombreSucursal { get; set; } = string.Empty;
         public DateTime FechaCreacion { get; set; }
     }
 }
